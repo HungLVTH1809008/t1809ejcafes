@@ -14,7 +14,7 @@ class UpdateTableOrderDetail extends Migration
     public function up()
     {
         Schema::table('OrderDetail', function (Blueprint $table) {
-            $table->foreign("Order_id")->references("Order_id")->on("Order");
+            $table->foreign("order_id")->references("order_id")->on("Order");
         });
     }
 

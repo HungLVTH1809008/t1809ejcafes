@@ -20,7 +20,7 @@ class CreateTableProduct extends Migration
             $table->string("detail");
             $table->decimal("price");
             $table->string("status");
-            $table->binary("image");
+            $table->binary("images");
             $table->Date("date");
             $table->decimal("priceNew");
             $table->unsignedTinyInteger("active")->default(1);

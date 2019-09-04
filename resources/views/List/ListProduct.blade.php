@@ -1,46 +1,47 @@
-@extends("layout")
+{{--@extends("layout")--}}
 
-@section("main_content")
+{{--@section("main_content")--}}
 
-    <table class="table table-hover">
-        <h1 style="text-align: center;color: red">Sanh dach Product</h1>
-        <thead>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Category</th>
-        <th>Detail</th>
-        <th>Images</th>
-        <th>Price</th>
-        <th>PriceNew</th>
-        <th>Date</th>
-        <th>Status</th>
-        <th>Active</th>
+{{--    <table class="table table-hover">--}}
+{{--        <h1 style="text-align: center;color: red">Sanh dach Product</h1>--}}
+{{--        <thead>--}}
+{{--        <th>ID</th>--}}
+{{--        <th>Name</th>--}}
+{{--        <th>Category</th>--}}
+{{--        <th>Detail</th>--}}
+{{--        <th>Price</th>--}}
+{{--        <th>Status</th>--}}
+{{--        <th>Images</th>--}}
+{{--        <th>Date</th>--}}
+{{--        <th>PriceNew</th>--}}
+{{--        <th>Active</th>--}}
 
-        </thead>
+{{--        </thead>--}}
 
-        <tbody>
+{{--        <tbody>--}}
 
-        @foreach($Products as $Product)
+{{--        @foreach($products as $Product)--}}
 
-            <tr>
+{{--            <tr>--}}
 
-                <td>{{$Product->product_id}}</td>
-                <td>{{$Product->product_name}}</td>
-                <td>{{$Product->category_id}}</td>
-                <td>{{$Product->images}}</td>
-                <td>{{$Product->price}}</td>
-                <td>{{$Product->priceNew}}</td>
-                <td>{{$Product->date}}</td>
-                <td>{{$Product->status}}</td>
-                <td>{{$Product->active}}</td>
+{{--                <td>{{$Product->product_id}}</td>--}}
+{{--                <td>{{$Product->product_name}}</td>--}}
+{{--                <td>{{$Product->category_id}}</td>--}}
+{{--                <td>{{$Product->detail}}</td>--}}
+{{--                <td>{{$Product->price}}</td>--}}
+{{--                <td>{{$Product->status}}</td>--}}
+{{--                <td>{{$Product->images}}</td>--}}
+{{--                <td>{{$Product->date}}</td>--}}
+{{--                <td>{{$Product->priceNew}}</td>--}}
+{{--                <td>{{$Product->active}}</td>--}}
 
-            </tr>
+{{--            </tr>--}}
 
-        @endforeach
+{{--        @endforeach--}}
 
-        </tbody>
+{{--        </tbody>--}}
 
-    </table>
+{{--    </table>--}}
 
 
-@endsection
+{{--@endsection--}}

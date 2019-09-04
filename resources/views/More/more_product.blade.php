@@ -1,6 +1,7 @@
 @extends("layout")
 @section("main_content")
-    <form action="/them-Product" method="post">
+    <form action="{{url("/them_Product")}}" method="post">
+        @csrf
         <h1>More Product</h1>
         <div class="form-group">
             <label> Product_name</label>
@@ -31,10 +32,10 @@
             @endif
         </div>
         <div class="form-group">
-            <label>image</label>
-            <input type="text" class="form-control" name="image" value="{{old("image")}}" placeholder="more image">
-            @if($errors->has("image"))
-                <p class="error" style="color: red">{{$errors->first("image")}}</p>
+            <label>images</label>
+            <input type="text" class="form-control" name="images" value="{{old("images")}}" placeholder="more images">
+            @if($errors->has("images"))
+                <p class="error" style="color: red">{{$errors->first("images")}}</p>
             @endif
         </div>
         <div class="form-group">
